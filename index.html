@@ -61,6 +61,93 @@ footer{background:var(--navy);color:var(--cream);padding:2.4rem 0;margin-top:4re
 @media(max-width:980px){.journey{grid-template-columns:repeat(3,1fr)}.first-ten{grid-template-columns:repeat(2,1fr)}.first-ten .mini-step:last-child{grid-column:span 2}.audience-grid,.legend,.three-col{grid-template-columns:1fr}.two-col,.edit-grid,.phrase-grid{grid-template-columns:1fr}.nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);padding:1rem 1.25rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow)}.nav-links.open{display:flex;flex-direction:column;align-items:stretch}.nav-links a{text-align:center}.menu-btn{display:block}}
 @media(max-width:640px){.hero{min-height:64vh;background-size:92vw}.hero h1{font-size:2.35rem}.hero-actions .btn{width:100%}.journey{grid-template-columns:1fr 1fr}.first-ten{grid-template-columns:1fr}.first-ten .mini-step:last-child{grid-column:auto}.section{padding:3.2rem 0}.part-head{align-items:center}.part-num{min-width:44px;height:44px}.rule-card summary{align-items:flex-start}.nav-inner{padding:.55rem .8rem}.brand img{width:38px;height:38px}.subnav{top:58px}}
 @media print{.navbar,.subnav,.hero-actions,.search-wrap,.search-status,.btn,.back-top{display:none!important}.hero{margin-top:0;min-height:auto;padding:2rem 0;background:none}.hero:before{display:none}.section{padding:1.2rem 0}.rule-card{break-inside:avoid}.rule-card .rule-text{display:block!important}.rule-card[open] summary,.rule-card summary{background:#fff;color:#000}.print-only{display:block}body{background:#fff;color:#000}a{color:#000}.container{max-width:none}.section-alt{background:#fff}.callout-final{background:#fff;color:#000;border:1px solid #aaa}.callout-final p{color:#333}footer{display:none}}
+@page{size:A4 portrait;margin:14mm 13mm 15mm}
+@media print{
+  body.print-quick .navbar,body.print-quick .subnav,body.print-quick .hero,body.print-quick main>section:not(#quick),body.print-quick footer{display:none!important}
+  body.print-quick #quick{display:block!important;padding:0;background:#fff!important}
+  body.print-quick #quick .container{max-width:none!important;width:auto!important;padding:0!important;margin:0!important}
+  body.print-quick #quick .section-title{font-size:20pt!important;line-height:1.1!important;margin:0 0 2mm!important;color:#001f3f!important;text-align:center!important;letter-spacing:.4px!important}
+  body.print-quick #quick .gold-rule{width:24mm!important;height:1.2mm!important;margin:2mm auto 5mm!important;background:#b8860b!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body.print-quick #quick .table-wrap{overflow:visible!important;border:1px solid #bfc7cc!important;border-radius:0!important;break-inside:auto!important}
+  body.print-quick #quick .quick-table{width:100%!important;min-width:0!important;table-layout:fixed!important;border-collapse:collapse!important}
+  body.print-quick #quick .quick-table th{background:#001f3f!important;color:#fff!important;padding:2.2mm 2mm!important;font-size:8.6pt!important;line-height:1.15!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body.print-quick #quick .quick-table td{padding:1.8mm 2mm!important;font-size:8.2pt!important;line-height:1.18!important;border-top:1px solid #dfe5e8!important;vertical-align:top!important}
+  body.print-quick #quick .quick-table td:first-child{color:#006666!important;font-weight:800!important}
+  body.print-quick #quick .quick-table tr{break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-quick #quick .quick-table thead{display:table-header-group!important}
+  body.print-quick #quick h3[style]{font-size:14pt!important;margin:7mm 0 4mm!important;break-after:avoid!important;page-break-after:avoid!important}
+  body.print-quick #quick .phrase-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:3mm!important}
+  body.print-quick #quick .phrase{border:1px solid #d0d6da!important;border-left:3px solid #b8860b!important;border-radius:0!important;padding:3mm!important;font-size:9.2pt!important;line-height:1.3!important;break-inside:avoid!important;page-break-inside:avoid!important;background:#fff!important}
+  body.print-quick #quick .phrase small{font-size:7.5pt!important;margin-bottom:1mm!important;color:#5d6873!important}
+  body.print-quick #quick .phrase q{font-size:9.2pt!important;color:#001f3f!important}
+  body.print-quick #quick .callout-final{margin-top:5mm!important;padding:4mm!important;border:1.5px solid #001f3f!important;border-radius:0!important;background:#fff!important;color:#001f3f!important;box-shadow:none!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-quick #quick .callout-final h3{font-size:12pt!important;margin:0 0 1.5mm!important;color:#001f3f!important}
+  body.print-quick #quick .callout-final p{font-size:9pt!important;line-height:1.3!important;margin:0!important;color:#333!important}
+  body.print-quick #quick .callout-final .btn{display:none!important}
+
+  /* Full guide: complete, reflowed A4 document — not a screenshot */
+  body.print-full{font-size:9.6pt!important;line-height:1.36!important;background:#fff!important;color:#213547!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body.print-full .navbar,body.print-full .subnav,body.print-full .hero-actions,body.print-full .search-wrap,body.print-full .search-status,body.print-full .btn,body.print-full .back-top,body.print-full footer{display:none!important}
+  body.print-full .hero{display:block!important;margin:0!important;min-height:0!important;padding:8mm 0 7mm!important;background:none!important;border-bottom:1.2mm solid #b8860b!important;break-after:avoid-page!important;page-break-after:avoid!important}
+  body.print-full .hero:before{display:none!important}
+  body.print-full .hero-content{max-width:none!important}
+  body.print-full .eyebrow{font-size:9pt!important;letter-spacing:1.5px!important;margin-bottom:1.5mm!important;color:#008080!important}
+  body.print-full .hero h1{font-size:27pt!important;line-height:1.02!important;margin:0!important;color:#001f3f!important;text-shadow:none!important}
+  body.print-full .hero-sub{font-size:12pt!important;margin:3mm 0 0!important;padding-bottom:2mm!important;border-bottom:0!important;color:#333!important}
+  body.print-full main>section{display:block!important;padding:6mm 0!important;background:#fff!important}
+  body.print-full .container{max-width:none!important;width:auto!important;padding:0!important;margin:0!important}
+  body.print-full .section-title{font-size:17pt!important;line-height:1.1!important;margin:0 0 1.5mm!important;color:#001f3f!important;break-after:avoid!important;page-break-after:avoid!important}
+  body.print-full .gold-rule{width:20mm!important;height:1mm!important;margin:1.5mm auto 4mm!important;background:#b8860b!important;break-after:avoid!important}
+  body.print-full .section-lead{font-size:9.8pt!important;line-height:1.35!important;margin:0 auto 5mm!important;color:#4f5d68!important}
+  body.print-full .notice{padding:3mm 3.5mm!important;margin:3mm 0!important;border-radius:0!important;border-left-width:1.2mm!important;font-size:9.2pt!important;line-height:1.3!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .legend,body.print-full .audience-grid,body.print-full .three-col{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:3mm!important}
+  body.print-full .two-col{display:grid!important;grid-template-columns:1fr 1fr!important;gap:3mm!important}
+  body.print-full .first-ten{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:2mm!important;margin-top:4mm!important}
+  body.print-full .mini-step{min-height:0!important;padding:3mm 2mm!important;border-radius:0!important;box-shadow:none!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .mini-step .num{width:7mm!important;height:7mm!important;margin:0 auto 2mm!important;font-size:8.5pt!important;background:#008080!important}
+  body.print-full .mini-step h3{font-size:8.6pt!important;margin:1mm 0!important}
+  body.print-full .mini-step p{font-size:7.8pt!important;line-height:1.25!important;margin:0!important}
+  body.print-full .journey{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:2.5mm!important;margin:4mm 0!important}
+  body.print-full .journey-step{padding:2.5mm!important;border-radius:0!important;box-shadow:none!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .journey-step span{font-size:7pt!important}
+  body.print-full .journey-step strong{font-size:8.5pt!important}
+  body.print-full .guide-card,body.print-full .compare-card,body.print-full .edit-card,body.print-full .phrase{border-radius:0!important;box-shadow:none!important}
+  body.print-full .guide-card{padding:4mm!important;margin:3mm 0!important;border:1px solid #d0d6da!important;break-inside:auto!important}
+  body.print-full .guide-card>h3{font-size:12.5pt!important;margin:0 0 3mm!important;color:#008080!important;break-after:avoid!important}
+  body.print-full .compare-card{padding:3mm!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .compare-card h3{font-size:10pt!important;margin:0 0 1.5mm!important}
+  body.print-full .compare-card p,body.print-full .compare-card li{font-size:8.8pt!important;line-height:1.28!important}
+  body.print-full .say-box{padding:2.5mm 3mm!important;margin:2mm 0!important;border-radius:0!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .say-box .say-label{font-size:7pt!important}
+  body.print-full .pipeline{gap:1.5mm!important;margin:3mm 0!important}
+  body.print-full .pipe{flex:1 1 27mm!important;max-width:none!important;padding:2.5mm!important;border-radius:0!important}
+  body.print-full .pipe strong{font-size:8.5pt!important}body.print-full .pipe small{font-size:7.4pt!important}
+  body.print-full .arrow{font-size:10pt!important}
+  body.print-full .table-wrap{overflow:visible!important;border-radius:0!important}
+  body.print-full .quick-table{width:100%!important;min-width:0!important;table-layout:fixed!important}
+  body.print-full .quick-table thead{display:table-header-group!important}
+  body.print-full .quick-table th{padding:2mm!important;font-size:8pt!important;background:#001f3f!important;color:#fff!important}
+  body.print-full .quick-table td{padding:1.8mm 2mm!important;font-size:7.8pt!important;line-height:1.2!important}
+  body.print-full .quick-table tr{break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .rule-part{display:block!important;margin:4mm 0 7mm!important;break-inside:auto!important}
+  body.print-full .part-head{padding:3mm 3.5mm!important;border-radius:0!important;background:#001f3f!important;color:#fff!important;break-after:avoid!important;page-break-after:avoid!important}
+  body.print-full .part-num{min-width:9mm!important;width:9mm!important;height:9mm!important;font-size:8pt!important;background:#008080!important}
+  body.print-full .part-head h3{font-size:11.5pt!important}
+  body.print-full .part-head p{font-size:8pt!important;line-height:1.2!important}
+  body.print-full .rules-wrap{margin-top:2mm!important}
+  body.print-full details.rule-card{display:block!important;margin:2mm 0!important;border-radius:0!important;border:1px solid #d5dce0!important;overflow:visible!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full details.rule-card>summary{display:flex!important;padding:2.5mm 3mm!important;background:#eef7f7!important;color:#001f3f!important;font-size:9pt!important;line-height:1.2!important;cursor:default!important;break-after:avoid!important;page-break-after:avoid!important}
+  body.print-full details.rule-card>summary:after{display:none!important;content:none!important}
+  body.print-full .rule-no{font-size:6.8pt!important;padding:1mm 1.5mm!important;background:#e2eaf0!important;color:#001f3f!important}
+  body.print-full details.rule-card>.rule-text{display:block!important;padding:2.5mm 3mm 3mm!important;border-top:1px solid #dfe5e8!important;color:#213547!important;font-size:8.5pt!important;line-height:1.3!important}
+  body.print-full details.rule-card>.rule-text p{margin:1.2mm 0!important}
+  body.print-full .phrase-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:3mm!important}
+  body.print-full .phrase{padding:3mm!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .callout-final{padding:4mm!important;margin-top:4mm!important;border-radius:0!important;box-shadow:none!important;background:#fff!important;color:#001f3f!important;border:1.2px solid #001f3f!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  body.print-full .callout-final h3{color:#001f3f!important}.callout-final p{color:#333!important}
+  body.print-full #rules,body.print-full #security{break-before:page!important;page-break-before:always!important}
+}
+
 </style>
 </head>
 <body>
@@ -89,9 +176,9 @@ footer{background:var(--navy);color:var(--cream);padding:2.4rem 0;margin-top:4re
     <div class="hero-sub">Understand the debate. Take part confidently. Know the rules.</div>
     <div class="hero-actions">
       <a class="btn btn-teal" href="#start">I’m new to MUN</a>
-      <a class="btn btn-gold" href="PyleaMUN_2027_Quick_Delegate_Guide.pdf" target="_blank" rel="noopener" aria-label="Open the PyleaMUN 2027 Quick Delegate Guide PDF">Quick Guide — View / Download PDF</a>
+      <a class="btn btn-gold" href="#quick" onclick="printQuickGuide(); return false;" aria-label="Print or save the PyleaMUN 2027 Quick Delegate Guide as PDF">Quick Guide — Print / Save as PDF</a>
       <a class="btn btn-navy" href="#rules">Go to the rules</a>
-      <button class="btn btn-gold" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <button class="btn btn-gold" type="button" onclick="printFullGuide()">Print / Save as PDF</button>
     </div>
   </div>
 </header>
@@ -104,7 +191,7 @@ footer{background:var(--navy);color:var(--cream);padding:2.4rem 0;margin-top:4re
 
 <main id="main">
 <section class="section" id="start">
-  <div class="container"><div class="notice gold"><strong>Quick Delegate Guide (PDF):</strong> <a href="PyleaMUN_2027_Quick_Delegate_Guide.pdf" target="_blank" rel="noopener"><strong>View / Download</strong></a> · save to your device or print for committee use.</div></div>
+  <div class="container"><div class="notice gold"><strong>Quick Delegate Guide:</strong> <a href="#quick" onclick="printQuickGuide(); return false;"><strong>Print / Save as PDF</strong></a> · formatted for printing or committee use.</div></div>
   <div class="container">
     <h2 class="section-title">Start Here</h2><div class="gold-rule"></div>
     <p class="section-lead">You do not need to memorise a rulebook before your first committee. Start with what will happen to you, what you may need to say, and where to look when you need the exact rule.</p>
@@ -461,6 +548,55 @@ footer{background:var(--navy);color:var(--cream);padding:2.4rem 0;margin-top:4re
 </footer>
 
 <script>
+function printFullGuide(){
+  const details=[...document.querySelectorAll('details.rule-card')];
+  const cards=[...document.querySelectorAll('.rule-card')];
+  const parts=[...document.querySelectorAll('[data-part]')];
+  const openState=details.map(d=>d.open);
+  const cardDisplay=cards.map(c=>c.style.display);
+  const partDisplay=parts.map(p=>p.style.display);
+  const searchValue=search ? search.value : '';
+  const statusText=status ? status.textContent : '';
+
+  document.body.classList.remove('print-quick');
+  document.body.classList.add('print-full');
+  details.forEach(d=>d.open=true);
+  cards.forEach(c=>c.style.display='');
+  parts.forEach(p=>p.style.display='');
+  if(search){search.value='';}
+  if(status){status.textContent='';}
+
+  let cleaned=false;
+  const cleanup=()=>{
+    if(cleaned) return;
+    cleaned=true;
+    document.body.classList.remove('print-full');
+    details.forEach((d,i)=>d.open=openState[i]);
+    cards.forEach((c,i)=>c.style.display=cardDisplay[i]);
+    parts.forEach((p,i)=>p.style.display=partDisplay[i]);
+    if(search){search.value=searchValue;}
+    if(status){status.textContent=statusText;}
+  };
+
+  window.addEventListener('afterprint',cleanup,{once:true});
+  const printMedia=window.matchMedia ? window.matchMedia('print') : null;
+  const onPrintChange=(event)=>{
+    if(!event.matches){
+      cleanup();
+      if(printMedia && printMedia.removeEventListener) printMedia.removeEventListener('change',onPrintChange);
+    }
+  };
+  if(printMedia && printMedia.addEventListener) printMedia.addEventListener('change',onPrintChange);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>window.print()));
+}
+
+function printQuickGuide(){
+  document.body.classList.add('print-quick');
+  const cleanup=()=>document.body.classList.remove('print-quick');
+  window.addEventListener('afterprint',cleanup,{once:true});
+  requestAnimationFrame(()=>window.print());
+}
+
 const menuBtn=document.getElementById('menuBtn');
 const navLinks=document.getElementById('navLinks');
 menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open?'true':'false');});
